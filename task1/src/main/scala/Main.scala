@@ -28,9 +28,9 @@ object Main {
         .write
         .option("header", "true")
         .mode("overwrite")
-        .csv("./data/output1")
+        .csv("./data/output")
 
-      renameOutputFile("./data/output1", "output.csv")
+      renameOutputFile("./data/output", "output.csv")
 
     } catch {
       case e: Exception => logger.error("An error occurred in processing", e)
